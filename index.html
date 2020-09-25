@@ -8,16 +8,18 @@
 <body style='margin: 0; overflow: hidden;'>
 <!-- ③ シーンを追加 -->
 <a-scene embedded arjs>
+  <a-assets>
    <!-- objファイル -->
    <a-asset-item id="obj" src="file/ar_test.obj"></a-asset-item> 
    <!-- mtlファイル -->
    <a-asset-item id="mtl" src="file/ar_test.mtl"></a-asset-item> 
+  </a-assets>
   
     <!-- ④ マーカーを追加 ここから -->
     <a-marker preset="hiro">
       
     <!-- ⑤ オブジェクトの追加 -->
-    <a-obj-model src="#obj" mtl="#mtl" scale="1 1 1" position="0 .5 0"></a-obj-model>
+    <a-obj-model src="#obj" mtl="#mtl" scale="1 1 1" position="0 1 0"></a-obj-model>
     <!-- <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#111">
       <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
       </a-animation>
