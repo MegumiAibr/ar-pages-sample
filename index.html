@@ -9,12 +9,17 @@
 <!-- シーンを追加 -->
 <a-scene embedded arjs>
   <a-assets>
-     <!-- objファイル -->
+     <!-- objファイル 
      <a-asset-item id="obj" src="file/歯車１（歯数20モジュール1.0歯幅5mm）.obj"></a-asset-item> 
+     -->
      <!-- mtlファイル 
      <a-asset-item id="mtl" src="file/ar_test2.mtl"></a-asset-item> 
      -->
+    <!-- gltfファイル -->
+    <a-asset-item id="tree" src="file/gear01.gltf"></a-asset-item>
   </a-assets>
+  
+  <a-entity gltf-model="#tree"></a-entity>
   
   <!-- マーカーを追加 ここから -->
   <a-marker preset="hiro">
